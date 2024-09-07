@@ -1,0 +1,30 @@
+name: CI Demo Tests
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:  # run workflow manually when needed
+
+jobs:
+  testcafe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+      - run: npm install
+      - run: npm run test:testcafe
+
+  playwright:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+      - run: npm install
+      - run: npm run test:playwright
