@@ -4,7 +4,7 @@
   "description": "A demo project for CI testing with TestCafe and Playwright",
   "scripts": {
     "test:testcafe": "testcafe 'chrome:headless' tests/testcafe-demo.js",
-    "test:playwright": "npx playwright test tests/playwright-demo.js"
+    "test:playwright": "npx playwright test tests/playwright-demo.spec.js"
   },
   "devDependencies": {
     "testcafe": "^1.17.0",
