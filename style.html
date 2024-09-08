@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Demo Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Make sure it takes full viewport height */
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            text-align: center; /* Center text */
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        input[type="text"], input[type="password"], select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        input[type="checkbox"], input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        select {
+            padding: 8px;
+            margin-top: 10px;
+            border-radius: 4px;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Basic Demo Page</h1>
+
+        <p>This page contains elements commonly used in automation testing.</p>
+
+        <!-- Form with inputs -->
+        <form id="styled-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <!-- Checkbox and radio buttons -->
+        <div>
+            <h3>Select Your Preferences:</h3>
+            <input type="checkbox" id="checkbox1" name="option1">
+            <label for="checkbox1">Option 1</label><br>
+
+            <input type="checkbox" id="checkbox2" name="option2">
+            <label for="checkbox2">Option 2</label><br>
+
+            <input type="radio" id="radio1" name="choice" value="choice1">
+            <label for="radio1">Choice 1</label><br>
+
+            <input type="radio" id="radio2" name="choice" value="choice2">
+            <label for="radio2">Choice 2</label>
+        </div>
+
+        <!-- Dropdown -->
+        <div>
+            <label for="dropdown">Select a fruit:</label>
+            <select id="dropdown">
+                <option value="apple">Apple</option>
+                <option value="banana">Banana</option>
+                <option value="cherry">Cherry</option>
+            </select>
+        </div>
+
+        <!-- Link -->
+        <p>
+            <a href="https://example.com" id="example-link">Go to Example</a>
+        </p>
+    </div>
+</body>
+</html>
