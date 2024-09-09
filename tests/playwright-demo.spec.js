@@ -9,7 +9,7 @@ test('Check button and h1 text on CI Demo', async ({ page }) => {
   console.log('made it past the H1 text check');
 
   // Check if the button exists
-  const button = await page.$('#demo-button-fail');
+  const button = await page.$('#demo-button')
   expect.soft(button).not.toBeNull();
   console.log('passing button check');
 
