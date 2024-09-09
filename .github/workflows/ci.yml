@@ -43,6 +43,8 @@ jobs:
         continue-on-error: true  # Ensure the workflow continues even if tests fail
       - name: List All Files in Root Directory
         run: ls -al  # List all files and folders in the root of the project
+      - name: List Test Results Directory
+        run: ls -al test-results
       - name: List Playwright Report Directory
         run: ls -al reports/playwright-report  # List the contents of the report directory
       - name: Upload Playwright Report
