@@ -1,0 +1,3 @@
+# Ignore Playwright and TestCafe reports
+reports/playwright-report/
+reports/testcafe-report/
