@@ -41,8 +41,6 @@ jobs:
       - name: Run Playwright tests
         run: npm run test:playwright
         continue-on-error: true  # Ensures that the workflow continues even if the test fails
-      - name: Generate Playwright report
-        run: npx playwright show-report
       - name: Upload Playwright Report
         uses: actions/upload-artifact@v2
         with:
