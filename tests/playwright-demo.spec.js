@@ -5,7 +5,7 @@ test('Check button and h1 text on CI Demo', async ({ page }) => {
 
   // Check if the <h1> tag contains the correct text
   const headerText = await page.textContent('h1');
-  expect.soft(headerText).toBe('Welcome to Demo Website');
+  expect.soft(headerText).toBe('Welcome to CI Demo Website');
   console.log('made it past the H1 text check');
 
   // Check if the button exists
