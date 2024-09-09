@@ -40,7 +40,11 @@ jobs:
         run: npx playwright install
       - name: Run Playwright tests
         run: npm run test:playwright
-        continue-on-error: true  # Ensures that the workflow continues even if the test fails
+        continue-on-error: true  # Ensure the workflow continues even if tests fail
+      - name: List All Files in Root Directory
+        run: ls -al  # List all files and folders in the root of the project
+      - name: List Playwright Report Directory
+        run: ls -al reports/playwright-report  # List the contents of the report directory
       - name: Upload Playwright Report
         uses: actions/upload-artifact@v2
         with:
