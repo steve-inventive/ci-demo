@@ -8,7 +8,7 @@ test('Check button exists and h1 text is correct', async t => {
     const header = Selector('h1');
 
     // Check if the <h1> tag contains the correct text
-    await t.expect(header.innerText).eql('Welcome to CI Demo Website');
+    await t.expect(header.innerText).eql('Welcome to whatever CI Demo Website');
     console.log('header is correct');
 
     // Check if the button exists
